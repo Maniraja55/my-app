@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sunil</title>
+  </head>
+  <body>
+    <script>
+      function uppercase(str) {
+        var array1 = str.split(" ");
+        var newarray = [];
+        for (var x = 0; x < array1.length; x++) {
+          newarray.push(array1[x].toChar(0).toUpperCase() + array1.slice(1));
+        }
+        return newarray.join("");
+      }
+      document.write(uppercase("the quick brown fox"));
+    </script>
+  </body>
+</html>
